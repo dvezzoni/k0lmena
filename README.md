@@ -10,6 +10,7 @@
 - Playwright
 - Cucumber
 - Artillery
+- Appium
 
 ## 🛠️ Setting up development environment
 
@@ -46,6 +47,11 @@ npm run allTests
 npm run apiTest
 ```
 
+### Mobile Test:
+```
+npm run mobile
+```
+
 ### Performance test:
 ```
 npm run load
@@ -72,6 +78,12 @@ npm run report-default
 npm run api-report
 ```
 
+### Mobile Reports:
+
+```
+npm run mobile-reports
+```
+
 ### Performance Reports:
 
 Local Performance report: 
@@ -86,6 +98,17 @@ npm run load-report-cloud
 
 Note: To use the reports in the Cloud, is necessary to register in https://artillery.io and generate a KEY. This key should be replaced in the file `package.json`
 
+## 🛠️ Tools
+We implemented some tools to simplify automation.
+
+### Crawler
+
+Run crawler:
+```
+npm run crawler
+```
+
+Note: The output file is in `/src/tools/crawler/output/locators-output.ts`
 
 ## Architecture
 This project contains all the logic inside of the source folder. Some of the folder you will find:
